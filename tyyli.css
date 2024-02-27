@@ -2,7 +2,9 @@ body {
     background-color: bisque;
     color: blue;
 }
-nav{ text-align: center;
+nav a { 
+    text-align: center;
     text-decoration: none;
+    background:rgb(50,34,76);
 
 }

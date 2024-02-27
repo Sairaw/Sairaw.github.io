@@ -3,6 +3,7 @@ body {
     color: blue;
 }
 nav a { 
+    display: inline-block;
     text-align: center;
     text-decoration: none;
     background: rgb(50,34,76);

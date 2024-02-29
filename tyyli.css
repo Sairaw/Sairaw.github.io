@@ -1,13 +1,15 @@
+/*tällä tavoinn laitetaan kommentti*/
+
 body {
     background-color: bisque;
     color: blue;
 }
-nav {
+.nav {
     padding: 14px 14px;
     background-color: bisque;
     float: right;
-}
-nav a { 
+} 
+.nav a { 
     display: inline-block;
     text-align: center;
     text-decoration: none;

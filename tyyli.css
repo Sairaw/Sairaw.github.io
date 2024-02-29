@@ -2,6 +2,11 @@ body {
     background-color: bisque;
     color: blue;
 }
+nav {
+    padding: 14px 14px;
+    background-color: bisque;
+    float: right;
+}
 nav a { 
     display: inline-block;
     text-align: center;

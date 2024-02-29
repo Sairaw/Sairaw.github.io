@@ -11,6 +11,7 @@ body {
 } 
 .nav a { 
     display: inline-block;
+    font-size: 18px;
     text-align: center;
     text-decoration: none;
     background: rgb(196, 174, 230);

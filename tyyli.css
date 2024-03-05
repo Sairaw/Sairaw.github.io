@@ -30,3 +30,8 @@ body {
     background-color: pink;
     padding: 10px;
   }
+  #progressBar {
+    height: 10px;
+    background-color: green;
+    width: 0%;
+  }

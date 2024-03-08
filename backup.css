@@ -1,0 +1,143 @@
+/*tällä tavoinn laitetaan kommentti*/
+
+body {
+    background-color: rgb(50, 34, 76);
+    color: rgb(255, 250, 250);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+}
+
+header {
+    text-align: center;
+    padding-top: 35px;
+}
+
+.nav {
+    background-color: darkgray;
+}
+
+
+/*päävalikko*/
+.nav a {
+    background: rgb(196, 174, 230);
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(50, 107, 19);
+    text-decoration: none;
+    padding: 10;
+    display: inline-block;
+    border: 2px solid rgb(206, 12, 106);
+    font-size: 15;
+
+
+    nav a:hover {
+        background-color: rgb(255, 250, 250);
+    }
+
+
+}
+
+nav a:hover {
+    color: aquamarine;
+    background-color: rgb(42, 61, 165);
+}
+/* Taustakuvan upottaminen */
+.taustakuva {
+    background-image: url('lapset.jpg');
+   /* Taustakuva on puolet elementin leveydestä ja korkeudesta */
+    background-size: 70%; /* Skaalaa taustakuva elementin koon mukaan */
+    background-position: center;/* Aseta taustakuva keskelle elementtiä */
+    
+
+}
+/* Teksti*/
+
+h1 {
+    color: rgb(3, 30, 54);
+    font-size: 30;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+
+}
+
+h2 {
+    color: rgb(54, 3, 54);
+    font-size: 20;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+
+.topnav {
+
+    padding: 14px 14px;
+    background-color: bisque;
+    float: right;
+}
+
+.cta-button {
+    display: inline-block;
+    padding: 10px 20px;
+    /* Säädä tyynyn kokoa tarpeidesi mukaan */
+    background-color: #ff00c8;
+    /* Vaihda taustaväriä haluamaksesi */
+    color: #fff;
+    /* Vaihda tekstin väriä, jotta se erottuu taustasta */
+    text-decoration: none;
+    border: 2px solid transparent;
+    /* Lisää reunus, jos haluat */
+    border-radius: 5px;
+    /* Pyöristä kulmat */
+    transition: background-color 0.3s, color 0.3s, border-color 0.3s;
+    /* Lisää siirtymäefekti */
+}
+
+.cta-button:hover {
+    background-color: #0056b3;
+    /* Vaihda hover-tilassa taustaväriä */
+    border-color: #0056b3;
+    /* Vaihda hover-tilassa reunuksen väriä */
+}
+
+.cta-button2 {
+    font: arial;
+    display: inline-block;
+    padding: 20px 60px;
+    /* Säädä tyynyn kokoa tarpeidesi mukaan */
+    background-color: #ff00c8;
+    /* Vaihda taustaväriä haluamaksesi */
+    color: #fff;
+    /* Vaihda tekstin väriä, jotta se erottuu taustasta */
+    text-decoration: none;
+    border: 2px solid transparent;
+    /* Lisää reunus, jos haluat */
+    border-radius: 10px;
+    /* Pyöristä kulmat */
+    transition: background-color 0.3s, color 0.3s, border-color 0.3s;
+    /* Lisää siirtymäefekti */
+}
+
+.cta.button2 :hover {
+    background-color: #0056b3;
+    /* Vaihda hover-tilassa taustaväriä */
+    border-color: #0056b3;
+
+}
+
+.footer {
+    position: absolute;
+    font-size: 20;
+    bottom: 0;
+    left: 0;
+    z-index: 10;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: pink;
+    padding: 20px;
+}
+
+#progressBar {
+    height: 10px;
+    background-color: green;
+    width: 0%;
+}

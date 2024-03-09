@@ -104,58 +104,219 @@ h2 {
     margin-bottom: 10px;
 
 }
+
 body {
     font-family: Arial, sans-serif;
-    background-color: #f0f0f0;
     margin: 0;
     padding: 0;
 }
 
-.container {
-    max-width: 800px;
-    margin: 0 auto;
+header {
+    background-color: #f4f4f4;
     padding: 20px;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
+}
+
+.nav a {
+    text-decoration: none;
+    margin-right: 20px;
+}
+.container {
+    max-width: 600px; /* Oletusleveys */
+    margin: 0 auto; /* Keskitä container-div sivulla */
+}
+
+/* Media query mobiililaitteille */
+@media (min-width: 768px) {
+    .container {
+        max-width: 1200px; /* Leveys desktop-näytöille */
+    }
 }
 
 .tuote {
-    width: calc(33.33% - 20px);
-    background-color: #fff;
-    border-radius: 5px;
-    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
-    padding: 20px;
+    flex: 0 0 calc(30% - 20px); /* Kolme tuotetta vierekkäin, jokaisen marginaalin kanssa */
     margin-bottom: 20px;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 5px;
+    text-align: center;
 }
 
 .tuote img {
     max-width: 100%;
     height: auto;
-    display: block;
-    margin: 0 auto 15px;
+    border-radius: 30px;
 }
 
 .tuote h2 {
-    font-size: 24px;
-    margin: 0;
+    margin-top: 10px;
+    font-size: 1.2em;
 }
 
-.tuote p {
-    color: #666;
-    margin-bottom: 10px;
+.tuote ul {
+    padding: 0;
+    margin: 10px 0;
 }
 
-button {
+.tuote li {
+    list-style-type: none;
+    margin-bottom: 5px;
+}
+
+.tuote button {
     padding: 10px 20px;
     background-color: #007bff;
     color: #fff;
     border: none;
-    border-radius: 3px;
+    border-radius: 5px;
     cursor: pointer;
-    font-size: 16px;
+    transition: background-color 0.3s;
 }
 
-button:hover {
+.tuote button:hover {
     background-color: #0056b3;
 }
+
+
+
+/* Reset CSS */
+body, h1, h2, h3, h4, h5, h6, p, ul, li {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #6a5acd; /* Liila taustaväri */
+    color: #fff; /* Valkoinen fonttiväri */
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+}
+
+.nav {
+    text-align: center;
+}
+
+.nav a {
+    color: #fff;
+    text-decoration: none;
+    margin-right: 20px;
+}
+
+.nav a:hover {
+    text-decoration: underline;
+}
+
+.contact, .contact-info, .opening-hours {
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 5px;
+    text-align: center; /* Keskitetään teksti */
+    color: #333; /* Musta fonttiväri */
+}
+
+.contact h1, .contact-info h2, .opening-hours h2 {
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.contact p, .contact-info p, .opening-hours p {
+    margin-bottom: 10px;
+}
+
+.contact-info p {
+    font-weight: bold;
+}
+
+.contact-info a {
+    color: #007bff;
+}
+
+.contact-info a:hover {
+    text-decoration: underline;
+}
+
+.contact-info span {
+    font-weight: bold;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #6a5acd;
+    color: #fff;
+}
+
+/* Header */
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+}
+
+.nav {
+    text-align: center;
+}
+
+.nav a {
+    color: #fff;
+    text-decoration: none;
+    margin-right: 20px;
+}
+
+.nav a:hover {
+    text-decoration: underline;
+}
+
+/* Tuotteet */
+.container {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+
+.tuote {
+    width: 30%;
+    margin-bottom: 20px;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    text-align: center;
+    color: #333;
+}
+
+.tuote img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.tuote h2 {
+    margin-top: 10px;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+.tuote ul {
+    list-style: none;
+    padding: 0;
+}
+
+.tuote ul li {
+    margin-bottom: 5px;
+}
+
+.tuote p {
+    margin-bottom: 10px;
+}
+
+.tuote .card {
+    margin-top: 20px;
+}
+

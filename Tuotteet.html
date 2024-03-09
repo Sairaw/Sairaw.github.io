@@ -1,35 +1,63 @@
-<!--tähän tulisi kommentti-->
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="tyyli.css">
 </head>
 <body>
-    <div> class= "Reppu"</div>
-    <img class="Tuotteet"src="" alt="">
-
-    <h1>Tuotteet</h1> <!--kun klikkaa tästä niin päästään tämämn näköiseen sivuun-->
-    <h2> Tuoetetiedot
-        - Kestävä materiaalia
-        - Vyö, joka tukee selkää
-        - Tyylikäs
-        Hinta: 19.90€ <!--tähän tulee ostoskori logo-->
-    </h2>
-
-    <h2> Tuoetetiedot
-        - Voit valita oman lapsesi nimen
-        - Vain 10% muovia
-        - Koko 0.5l korkeus 20cm
-        - BPA-vapaa muovia
-        Hinta: 13.90€ <!--tähän tulee ostoskori logo-->
-    </h2>
+    <header>
+         <nav class="nav">
+                <a href="index.html">Etusivu</a>
+                <a href="Tuotteet.html">Tuotteet</a>
+                <a href="Tietoa Meistä.html">Tietoa Meistä</a>
+                <a href="Ota Yhteyttä.html">Ota Yhteyttä</a>
+         </nav>
     
-    <h2> Tuoetetiedot
-        - Treenipaita, johon saat printatua lapsesi nimen
-        - 100 % luomupuuvillaa, serifikaatti
-        Hinta: 13,90€ <!--tähän tulee ostoskori logo-->
-    </h2>
+        </header>
+
+    <div class="product">
+        <img src="Images/Reppu.jpg" alt="Reppu">
+        <h2>Tuotetiedot</h2>
+        <ul>
+            <li>Kestävä materiaalia</li>
+            <li>Vyö, joka tukee selkää</li>
+            <li>Tyylikäs</li>
+        </ul>
+        <p>Hinta: 19.90€ <!-- Ostoskorin logo puuttuu --></p>
+        <div class="card">
+            <p><button>Add to Cart</button></p>
+        </div>
+    </div>
+
+    <div class="product">
+        <img src="Images/Paita.jpg" alt="Paita">
+        <h2>Tuotetiedot</h2>
+        <ul>
+            <li>Voit valita oman lapsesi nimen</li>
+            <li>Vain 10% muovia</li>
+            <li>Koko 0.5l korkeus 20cm</li>
+            <li>BPA-vapaa muovia</li>
+        </ul>
+        <p>Hinta: 13.90€ <!-- Ostoskorin logo puuttuu --></p>
+        <div class="card">
+            <p><button>Add to Cart</button></p>
+        </div>
+    </div>
+
+    <div class="product">
+        <img src="Images/Pullo_nimellä.jpg" alt="Pullo">
+        <h2>Tuotetiedot</h2>
+        <ul>
+            <li>Treenipaita, johon saat printatua lapsesi nimen</li>
+            <li>100 % luomupuuvillaa, sertifioitu</li>
+        </ul>
+        <p>Hinta: 13,90€ <!-- Ostoskorin logo puuttuu --></p>
+        <div class="card">
+            <p><button>Add to Cart</button></p>
+        </div>
+    </div>
+
 </body>
 </html>

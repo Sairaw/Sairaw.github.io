@@ -34,11 +34,6 @@ body {
     color: aquamarine;
     background-color: rgb(42, 61, 165);
 }
-.valittu a {
-    color: aqua;
-    background-color: antiquewhite;
-
-}
 
 /* Taustakuva */
 .taustakuva {
@@ -214,6 +209,8 @@ header {
 
 .nav a:hover {
     text-decoration: underline;
+    color: #6a5acd;
+    background-color: whitesmoke;
 }
 .nav a:active{
     color: aliceblue;

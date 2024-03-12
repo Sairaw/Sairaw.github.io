@@ -280,7 +280,6 @@ header {
     align-items: flex-start;
     flex-wrap: wrap;
 }
-
 .tuote {
     width: 30%;
     margin-bottom: 20px;
@@ -290,33 +289,3 @@ header {
     text-align: center;
     color: #333;
 }
-
-.tuote img {
-    max-width: 100%;
-    height: auto;
-    border-radius: 5px;
-}
-
-.tuote h2 {
-    margin-top: 10px;
-    margin-bottom: 5px;
-    color: #333;
-}
-
-.tuote ul {
-    list-style: none;
-    padding: 0;
-}
-
-.tuote ul li {
-    margin-bottom: 5px;
-}
-
-.tuote p {
-    margin-bottom: 10px;
-}
-
-.tuote .card {
-    margin-top: 20px;
-}
-

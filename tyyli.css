@@ -126,11 +126,32 @@ h1 {
     background-color: #9b4caf;
     transform: translateY(2px);
 }
-.footer{
-    text-align: center;
-    
-
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px; /* Säädä korkeus tarpeen mukaan */
 }
+.footer-div {
+    display: flex;
+    align-items: center;
+}
+.footer-div p {
+    margin-left: 10px; /* Lisää väliä tekstin ja kuvien välille */
+}footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px; /* Säädä korkeus tarpeen mukaan */
+}
+.footer-div {
+    display: flex;
+    align-items: center;
+}
+.footer-div p {
+    margin-left: 10px; /* Lisää väliä tekstin ja kuvien välille */
+}
+
 
 /* Keskitys */
 .contact, .contact-info, .opening-hours, .map {

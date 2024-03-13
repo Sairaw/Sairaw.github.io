@@ -126,6 +126,10 @@ h1 {
     background-color: #9b4caf;
     transform: translateY(2px);
 }
+.footer{
+    text-align: center;
+
+}
 
 /* Keskitys */
 .contact, .contact-info, .opening-hours, .map {

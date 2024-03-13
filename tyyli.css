@@ -106,10 +106,10 @@ h1 {
 }
 
 .cta-button:hover {
-    background-color: #0056b3;
+    background-color: #0056b3; /* Tilanne, jossa käyttäjä vie hiiren kohdistimeen; sen väri */
 }
 
-.cta-button2 {
+.cta-button2 {   /* Toinen kehote-nappi index sivulla ja sen määritykset*/
     display: inline-block;
     width: auto;
     padding: 10px 20px;
@@ -124,11 +124,11 @@ h1 {
 }
 
 .cta-button2:hover {
-    background-color: #45a049;
+    background-color: #45a049;  /* Tilanne, jossa käyttäjä vie hiiren kohdistimeen; sen väri */
 }
 
 .cta-button2:active {
-    background-color: #9b4caf;
+    background-color: #9b4caf;  /* Silloin kun kohdistin on päällä*/
     transform: translateY(2px);
 }
 footer {

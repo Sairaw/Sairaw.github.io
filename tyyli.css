@@ -2,6 +2,7 @@
 header {
     text-align: center;
     padding-top: 35px;
+    background-color: transparent; /* Poistetaan taustaväri headerista */
 }
 
 body {
@@ -16,18 +17,24 @@ body {
 .nav {
     background-color: rgb(22, 21, 21);
     padding: 10px 0; /* Lisätty padding */
+    text-align: center;
 }
 
 /* Päävalikko */
 .nav a {
     background: rgb(196, 174, 230);
     font-family: Arial, Helvetica, sans-serif;
-    color: rgb(50, 107, 19);
+    color: rgb(17, 18, 17);
     text-decoration: none;
     padding: 10px;
     display: inline-block;
     border: 2px solid rgb(206, 12, 106);
     font-size: 15px;
+    margin: 5px;
+}
+
+.nav a.active {
+    background-color: rgb(17, 16, 16);
 }
 
 .nav a:hover {
@@ -35,51 +42,57 @@ body {
     background-color: rgb(42, 61, 165);
 }
 
-/* Taustakuva */
-.taustakuva {
-    width: 100%; /* Muutettu koko leveydelle */
-    height: auto; /* Automaattinen korkeus */
-    text-align: center;
-    margin-bottom: 20px;
+#valittu {
+    background-color: black;
+    color: white;
 }
 
-.box-image {
-    max-width: 100%;
-    max-height: 100%;
-    border-radius: 5px; /* Lisätty reunus pyöristämiseksi */
-}
-
-/* Teksti */
+/* Etusivun otsikon tyyli */
 h1 {
     color: rgb(3, 30, 54);
     font-size: 30px;
     font-family: Arial, Helvetica, sans-serif;
-    text-align: center;
     margin-top: 0;
 }
 
-h2 {
-    color: rgb(54, 3, 54);
-    font-size: 20px;
-    font-family: Arial, Helvetica, sans-serif;
+/* Taustakuvan tyyli */
+.taustakuva {
+    position: relative;
     text-align: center;
+    margin-bottom: 20px;
 }
 
+.taustakuva img {
+    border-radius: 5px;
+}
+
+.taustakuva h1 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+}
+
+/* Sydänkuvakkeen tyyli */
+.heart {
+    color: red;
+}
+
+/* Painikkeiden ja konttien tyyli */
 .container {
-    max-width: 800px;
-    margin: 0 auto;
-    padding: 20px;
-    border-radius: 10px;
-    background-color: rgba(225, 68, 176, 0.8);
+    text-align: center;
+    margin-top: 20px;
 }
 
 .cta-button {
-    display: block; 
-    width: 10%;
+    display: inline-block;
+    width: auto;
     padding: 10px 20px;
-    background-color: #ff00c8;
+    background-color: rgba(225, 68, 176, 0.8);
     color: #fff;
     text-decoration: none;
+    text-align: center;
     border: 2px solid transparent;
     border-radius: 5px;
     transition: background-color 0.3s, color 0.3s, border-color 0.3s;
@@ -88,78 +101,130 @@ h2 {
 
 .cta-button:hover {
     background-color: #0056b3;
-    border-color: #0056b3;
 }
 
 .cta-button2 {
-    display: block; 
-    width: 10%;
+    display: inline-block;
+    width: auto;
     padding: 10px 20px;
-    background-color: #ff00c8;
+    background-color: rgba(41, 200, 14, 0.8);
     color: #fff;
     text-decoration: none;
+    text-align: center;
     border: 2px solid transparent;
     border-radius: 5px;
     transition: background-color 0.3s, color 0.3s, border-color 0.3s;
     margin-bottom: 10px;
+    
 
+   
 }
 
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
+.cta-button2:hover {
+    background-color: #45a049;
 }
 
-header {
-    background-color: #f4f4f4;
-    padding: 20px;
+.cta-button2:active {
+    background-color: #9b4caf;
+    transform: translateY(2px);
 }
 
-.nav a {
-    text-decoration: none;
-    margin-right: 20px;
-}
-.container {
-    max-width: 600px; /* Oletusleveys */
-    margin: 0 auto; /* Keskitä container-div sivulla */
+/* Keskitys */
+.contact, .contact-info, .opening-hours, .map {
+    max-width: 600px; /* Maksimileveys */
+    margin: 0 auto; /* Keskitä sivun leveydelle */
+    text-align: center; /* Keskitä tekstit */
 }
 
-/* Media query mobiililaitteille */
-@media (min-width: 768px) {
-    .container {
-        max-width: 1200px; /* Leveys desktop-näytöille */
+/* Kuvien asettelu työpöytätasolla */
+.contact-info img, .opening-hours img, .map img {
+    max-width: 50%; /* Puolet leveydestä */
+    float: left; /* Aseta kuvat vierekkäin */
+    margin-right: 10px; /* Lisää hieman väliä kuvien välille */
+}
+
+/* Kuvien asettelu mobiililaitteilla */
+@media (max-width: 600px) {
+    .contact-info img, .opening-hours img, .map img {
+        max-width: 100%; /* Täysi leveys */
+        float: none; /* Aseta kuvat allekkain */
+        margin-right: 0; /* Nollaa väli */
+        margin-bottom: 10px; /* Lisää väliä kuvien alle */
     }
 }
 
-.tuote {
-    flex: 0 0 calc(30% - 20px); /* Kolme tuotetta vierekkäin, jokaisen marginaalin kanssa */
-    margin-bottom: 20px;
+/* Yhteystietojen CSS-koodi */
+.contact {
+    margin: 20px auto;
     padding: 20px;
-    background-color: #f9f9f9;
+    background-color: #fff;
     border-radius: 5px;
+    text-align: center; /* Keskitetään yhteystiedot */
+    color: #333; /* Musta fonttiväri */
+}
+
+.contact h1 {
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.contact p {
+    margin-bottom: 10px;
+}
+
+.contact a {
+    color: #007bff;
+}
+
+.contact a:hover {
+    text-decoration: underline;
+}
+
+.contact span {
+    font-weight: bold;
+}
+
+/* Kartta */
+.kartta {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.kartta iframe {
+    width: 80%;
+    height: 300px; /* Muuta korkeus tarpeen mukaan */
+    border: 0;
+    border-radius: 5px;
+}
+
+/* Asetetaan elementit allekkain mobiilinäkymässä */
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.container1 .tuote {
+    width: 30%; /* Leveys, jotta ne mahtuvat kolme rinnakkain */
+    margin-bottom: 20px; /* Lisää marginaalia alapuolelle paremman ulkonäön saavuttamiseksi */
+}
+
+.tuote {
+    flex: 0 0 100%; /* Yksi tuote per rivi mobiililaitteilla */
+    max-width: 300px; /* Rajoitetaan tuotteiden leveys */
+    margin: 10px;
     text-align: center;
 }
 
+/* Kuvan koko */
 .tuote img {
-    max-width: 100%;
+    width: 50%;
     height: auto;
-    border-radius: 30px;
+    border-radius: 5px;
 }
 
-.tuote h2 {
-    margin-top: 10px;
-    font-size: 1.2em;
-}
-
-.tuote ul {
-    padding: 0;
-    margin: 10px 0;
-}
-
-.tuote li {
-    list-style-type: none;
-    margin-bottom: 5px;
+/* Hinta- ja nappielementtien tyyli */
+.tuote p, .tuote button {
+    margin-top: 5px;
 }
 
 .tuote button {
@@ -177,150 +242,4 @@ header {
 }
 
 
-
-/* Reset CSS */
-body, h1, h2, h3, h4, h5, h6, p, ul, li {
-    margin: 0;
-    padding: 0;
-}
-
-body {
-    font-family: Arial, sans-serif;
-    line-height: 1.6;
-    background-color: #6a5acd; /* Liila taustaväri */
-    color: #fff; /* Valkoinen fonttiväri */
-}
-
-header {
-    background-color: #333;
-    color: #fff;
-    padding: 10px 0;
-}
-
-.nav {
-    text-align: center;
-}
-
-.nav a {
-    color: #fff;
-    text-decoration: none;
-    margin-right: 20px;
-}
-
-.nav a:hover {
-    text-decoration: underline;
-    color: #6a5acd;
-    background-color: whitesmoke;
-}
-.nav a:active{
-    color: aliceblue;
-}
-.contact, .contact-info, .opening-hours {
-    margin: 20px auto;
-    padding: 20px;
-    background-color: #fff;
-    border-radius: 5px;
-    text-align: center; /* Keskitetään teksti */
-    color: #333; /* Musta fonttiväri */
-}
-
-.contact h1, .contact-info h2, .opening-hours h2 {
-    color: #333;
-    margin-bottom: 10px;
-}
-
-.contact p, .contact-info p, .opening-hours p {
-    margin-bottom: 10px;
-}
-
-.contact-info p {
-    font-weight: bold;
-}
-
-.contact-info a {
-    color: #007bff;
-}
-
-.contact-info a:hover {
-    text-decoration: underline;
-}
-
-.contact-info span {
-    font-weight: bold;
-}
-
-body {
-    font-family: Arial, sans-serif;
-    line-height: 1.6;
-    background-color: #6a5acd;
-    color: #fff;
-}
-
-/* Header */
-header {
-    background-color: #333;
-    color: #fff;
-    padding: 10px 0;
-}
-
-.nav {
-    text-align: center;
-}
-
-.nav a {
-    color: #fff;
-    text-decoration: none;
-    margin-right: 20px;
-}
-
-.nav a:hover {
-    text-decoration: underline;
-}
-
-/* Tuotteet */
-.container {
-    display: flex;
-    justify-content: space-around;
-    align-items: flex-start;
-    flex-wrap: wrap;
-}
-
-.tuote {
-    width: 30%;
-    margin-bottom: 20px;
-    background-color: #fff;
-    padding: 20px;
-    border-radius: 5px;
-    text-align: center;
-    color: #333;
-}
-
-.tuote img {
-    max-width: 100%;
-    height: auto;
-    border-radius: 5px;
-}
-
-.tuote h2 {
-    margin-top: 10px;
-    margin-bottom: 5px;
-    color: #333;
-}
-
-.tuote ul {
-    list-style: none;
-    padding: 0;
-}
-
-.tuote ul li {
-    margin-bottom: 5px;
-}
-
-.tuote p {
-    margin-bottom: 10px;
-}
-
-.tuote .card {
-    margin-top: 20px;
-}
 

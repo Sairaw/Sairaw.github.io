@@ -131,6 +131,19 @@ h1 {
     background-color: #9b4caf;
     transform: translateY(2px);
 }
+/* Kehotenappi tuotteet sivulla */
+.cta-button3 {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    padding: 10px 20px;
+    background-color: #007bff; /* Sininen väri */
+    color: white;
+    text-decoration: none;
+    border: none;
+    border-radius: 5px;
+    z-index: 999; /* Tärkeysjärjestys varmistaa, että nappi on muiden elementtien päällä */
+}
 footer {
     display: flex;
     justify-content: center;

@@ -3,6 +3,7 @@ header {
     text-align: center;
     padding-top: 35px;
     background-color: transparent; /* Poistetaan taustaväri headerista */
+    color: #fff;
 }
 
 body {

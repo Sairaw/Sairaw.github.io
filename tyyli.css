@@ -148,6 +148,13 @@ h1 {
         float: none; /* Aseta kuvat allekkain */
         margin-right: 0; /* Nollaa väli */
         margin-bottom: 10px; /* Lisää väliä kuvien alle */
+        
+    }
+    .box-image {
+        width: 80%;
+        height: auto;
+        
+    
     }
 }
 

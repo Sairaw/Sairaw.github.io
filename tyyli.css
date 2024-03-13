@@ -16,7 +16,7 @@ body {
 }
 .otsikko {
     font-size: 16;
-    color: aliceblue;
+    color: whitesmoke;
 }
 /* Navin fontti */
 .nav {
@@ -131,26 +131,7 @@ h1 {
     background-color: #9b4caf;
     transform: translateY(2px);
 }
-/* Kehotenappi tuotteet sivulla */
-.cta-button3 {
-    position: fixed;
-    top: 20px;
-    right: 20px;
-    padding: 10px 20px;
-    background-color: #007bff; /* Sininen väri */
-    color: white;
-    text-decoration: none;
-    border: none;
-    border-radius: 5px;
-    z-index: 999; /* Tärkeysjärjestys varmistaa, että nappi on muiden elementtien päällä */
-}
-
-/* hoover*/
-.cta-button3:hover {
-    background-color: #0056b3; /* Vaaleampi sininen väri hoveroidessa */
-}
-    footer {
-
+footer {
     display: flex;
     justify-content: center;
     align-items: center;

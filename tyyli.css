@@ -91,7 +91,7 @@ h1 {
     margin-top: 20px;
 }
 
-.cta-button {
+.cta-button {  /* Ensimmäinen kehote-nappi index sivulla ja sen määritykset*/
     display: inline-block;
     width: auto;
     padding: 10px 20px;

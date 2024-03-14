@@ -197,6 +197,34 @@ footer {
     }
 }
 
+/*tablettikoko*/
+@media screen and (min-width: 600px)
+contact-info img, .opening-hours img, .map img {
+    max-width: 100%; /* Täysi leveys */
+    float: none; /* Aseta kuvat allekkain */
+    margin-right: 0; /* Nollaa väli */
+    margin-bottom: 10px; /* Lisää väliä kuvien alle */
+    
+}
+.box-image {
+    width: 80%;
+    height: auto;
+}
+.container {
+    width: 90%;
+    height: auto;
+
+}
+.footer_kuva{
+    width: 15px;
+    height: 15px;
+
+}
+}
+
+
+
+
 /* Ota yhteyttä.html:n CSS-koodi */
 .contact {
     margin: 20px auto;

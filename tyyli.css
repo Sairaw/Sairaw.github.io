@@ -179,8 +179,182 @@ footer {
         float: none; /* Aseta kuvat allekkain */
         margin-right: 0; /* Nollaa väli */
         margin-bottom: 10px; /* Lisää väliä kuvien alle */
-        
+      
     }
+
+    /* Etusivun CSS-koodi */
+header {
+    text-align: center;
+    padding-top: 35px;
+    background-color: transparent; /* Poistetaan taustaväri headerista */
+    color: #fff;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: rgb(74, 53, 107);
+    color: rgb(247, 248, 243);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+}
+.otsikko {
+    font-size: 16;
+    color: whitesmoke;
+}
+/* Navin fontti */
+.nav {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(22, 21, 21);
+    padding: 10px 0; /* Lisätty padding */
+    text-align: center;
+}
+
+/* Päävalikko */
+.nav a {
+    background: rgb(196, 174, 230);
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(17, 18, 17);
+    text-decoration: none;
+    padding: 10px;
+    display: inline-block;
+    border: 2px solid rgb(206, 12, 106);
+    font-size: 15px;
+    margin: 5px;
+}
+
+.nav a.active {
+    background-color: rgb(17, 16, 16);
+}
+
+.nav a:hover {
+    color: aquamarine;
+    background-color: rgb(42, 61, 165);
+}
+
+#valittu {
+    background-color: black;
+    color: white;
+}
+
+/* Etusivun otsikon tyyli */
+h1 {
+    color: rgb(3, 30, 54);
+    font-size: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 0;
+}
+
+/* Taustakuvan tyyli */
+.taustakuva {
+    position: relative;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.taustakuva img {
+    border-radius: 5px;
+}
+
+.taustakuva h1 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+}
+
+/* Sydänkuvakkeen tyyli */
+.heart {
+    color: red;
+}
+
+/* Painikkeiden ja konttien tyyli */
+.container {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.cta-button {  /* Ensimmäinen kehote-nappi index sivulla ja sen määritykset*/
+    display: inline-block;
+    width: auto;
+    padding: 10px 20px;
+    background-color: rgba(225, 68, 176, 0.8);
+    color: #fff;
+    text-decoration: none;
+    text-align: center;
+    border: 2px solid transparent;
+    border-radius: 5px;
+    transition: background-color 0.3s, color 0.3s, border-color 0.3s;
+    margin-bottom: 10px;
+}
+
+.cta-button:hover {
+    background-color: #0056b3; /* Tilanne, jossa käyttäjä vie hiiren kohdistimeen; sen väri */
+}
+
+.cta-button2 {   /* Toinen kehote-nappi index sivulla ja sen määritykset*/
+    display: inline-block;
+    width: auto;
+    padding: 10px 20px;
+    background-color: rgba(41, 200, 14, 0.8);
+    color: #fff;
+    text-decoration: none;
+    text-align: center;
+    border: 2px solid transparent;
+    border-radius: 5px;
+    transition: background-color 0.3s, color 0.3s, border-color 0.3s;
+    margin-bottom: 10px;
+}
+
+.cta-button2:hover {
+    background-color: #45a049;  /* Tilanne, jossa käyttäjä vie hiiren kohdistimeen; sen väri */
+}
+
+.cta-button2:active {
+    background-color: #9b4caf;  /* Silloin kun kohdistin on päällä*/
+    transform: translateY(2px);
+}
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px; /* Säädä korkeus tarpeen mukaan */
+}
+.footer-div {
+    display: flex;
+    align-items: center;
+}
+.footer-div p {
+    margin-left: 10px; /* Lisää väliä tekstin ja kuvien välille */
+}footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px; /* Säädä korkeus tarpeen mukaan */
+}
+.footer-div {
+    display: flex;
+    align-items: center;
+}
+.footer-div p {
+    margin-left: 10px; /* Lisää väliä tekstin ja kuvien välille */
+}
+
+
+/* Keskitys */
+.contact, .contact-info, .opening-hours, .map {
+    max-width: 600px; /* Maksimileveys */
+    margin: 0 auto; /* Keskitä sivun leveydelle */
+    text-align: center; /* Keskitä tekstit */
+}
+
+/* Kuvien asettelu työpöytätasolla */
+.contact-info img, .opening-hours img, .map img {
+    max-width: 50%; /* Puolet leveydestä */
+    float: left; /* Aseta kuvat vierekkäin */
+    margin-right: 10px; /* Lisää hieman väliä kuvien välille */
+}
     .box-image {
         width: 80%;
         height: auto;

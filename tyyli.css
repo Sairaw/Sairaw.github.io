@@ -153,12 +153,7 @@ footer {
     align-items: center;
 }
 .footer-div p {
-    margin-left: 10px; /* Lisää väliä tekstin ja kuvien välille */
-}footer {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100px; /* Säädä korkeus tarpeen mukaan */
+    margin-left: 20px; /* Lisää väliä tekstin ja kuvien välille */
 }
 .footer-div {
     display: flex;

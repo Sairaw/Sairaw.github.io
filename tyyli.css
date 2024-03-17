@@ -20,12 +20,6 @@ body {
     font-size: 32px;
     color: whitesmoke;
 }
-
-hr {
-    border-top: 1px solid #c2c1f7;
-    margin-right: 20px;
-    margin-left: 20px;
-  }
   
 /* Navin fontti */
 .nav {

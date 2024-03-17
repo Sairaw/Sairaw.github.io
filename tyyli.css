@@ -6,6 +6,9 @@ header {
 }
 
 body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     margin: 0;
     padding: 0;
     background-color: rgb(74, 53, 107);
@@ -17,12 +20,6 @@ body {
     font-size: 32px;
     color: whitesmoke;
 }
-
-hr {
-    border-top: 1px solid #c2c1f7;
-    margin-right: 20px;
-    margin-left: 20px;
-  }
   
 /* Navin fontti */
 .nav {

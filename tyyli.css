@@ -279,7 +279,7 @@ h1 {
     transition: background-color 0.3s, color 0.3s, border-color 0.3s;
     margin-bottom: 10px;
     cursor: pointer;
-    margin: 4px; 2px;
+    margin: 4px;
 }
 
 .cta-button:hover {

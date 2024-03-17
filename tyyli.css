@@ -96,7 +96,7 @@ h1 {
 
 /* Tekstien keskittäminen */
 .container {
-    display: flex;
+   
     justify-content: center;
     text-align: center;
     margin-top: 20px;

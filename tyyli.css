@@ -14,7 +14,7 @@ body {
     font-size: 16px;
 }
 .otsikko {
-    font-size: 16;
+    font-size: 16px;
     color: whitesmoke;
 }
 /* Navin fontti */
@@ -198,7 +198,7 @@ body {
     font-size: 16px;
 }
 .otsikko {
-    font-size: 16;
+    font-size: 16px;
     color: whitesmoke;
 }
 /* Navin fontti */
@@ -371,13 +371,13 @@ footer {
 }
 
 /*tablettikoko*/
-@media screen and (min-width: 600px)
+@media screen and (min-width: 600px) {
 contact-info img, .opening-hours img, .map img {
     max-width: 100%; /* Täysi leveys */
     float: none; /* Aseta kuvat allekkain */
     margin-right: 0; /* Nollaa väli */
     margin-bottom: 10px; /* Lisää väliä kuvien alle */
-    
+}  
 }
 .box-image {
     width: 80%;

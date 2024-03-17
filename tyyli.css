@@ -155,15 +155,6 @@ footer {
 .footer-div p {
     margin-left: 20px; /* Lisää väliä tekstin ja kuvien välille */
 }
-.footer-div {
-    display: flex;
-    align-items: center;
-}
-.footer-div p {
-    margin-left: 10px; /* Lisää väliä tekstin ja kuvien välille */
-}
-
-
 /* Keskitys */
 .contact, .contact-info, .opening-hours, .map {
     max-width: 600px; /* Maksimileveys */

@@ -63,6 +63,12 @@ h1 {
     font-family: Arial, Helvetica, sans-serif;
     margin-top: 0;
 }
+h2{
+    color: rgb(3, 30, 54);
+    font-size: 25px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 0;
+}
 
 /* Taustakuvan tyyli */
 .taustakuva {

@@ -260,11 +260,23 @@ h1 {
     color: red;
 }
 /* Painikkeiden ja konttien tyyli */
-.container button {
+.container {
     text-align: center;
     margin-top: 20px;
 }
+.button.container {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px; /* Voit säätää tarvittaessa */
+}
 
+.button.container .cta-button,
+.button.container .cta-button2,
+.button.container .cta-button3 {
+    width: auto; /* Voit säätää napin leveyttä tarvittaessa */
+    padding: 10px 20px; /* Voit säätää napin sisäisiä marginaaleja */
+    margin: 0 10px; /* Lisätään väliä napin ja muiden elementtien välille */
+}
 .cta-button {  /* Ensimmäinen kehote-nappi index sivulla ja sen määritykset*/
     display: inline-block;
     width: auto;

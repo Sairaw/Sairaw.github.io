@@ -397,6 +397,601 @@ footer {
     }
 }
 
+
+User
+voitko korjaa koodia niin, että kaikki tekstit ovat smokevalkoisen värisiä paitsi ota yhteyttä container
+ChatGPT
+Tietysti! Voit käyttää CSS-koodia antamaan smokevalkoisen värin kaikille teksteille paitsi "ota yhteyttä" -elementille. Tässä on esimerkki:
+
+html
+Copy code
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ota yhteyttä</title>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5; /* Smokevalkoinen tausta */
+  }
+  .container {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #ffffff; /* Valkoinen tausta */
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sävytetty varjo */
+  }
+  .contact {
+    color: #000000; /* Musta teksti */
+  }
+  .contact h1 {
+    color: #333333; /* Hieman tummempi otsikkoteksti */
+  }
+</style>
+</head>
+<body>
+<div class="container">
+  <h1>Ota yhteyttä</h1>
+  <p class="contact">Tähän tulee yhteystietoja.</p>
+</div>
+</body>
+</html>
+Tämä CSS-koodi tekee seuraavaa:
+
+Määrittää taustavärin #f5f5f5, mikä vastaa smokevalkoista.
+Määrittää .container-elementin taustavärin valkoiseksi #ffffff.
+Määrittää tekstin värin .contact-luokan alle kuuluville elementeille mustaksi #000000.
+Määrittää otsikon värin .contact h1-elementille hieman tum
+User
+header {
+    text-align: center;
+    padding-top: 35px;
+    background-color: transparent; /* Poistetaan taustaväri headerista */
+    color: #fff;
+}
+
+body {
+  
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    background-color: rgb(74, 53, 107);
+    color: rgb(247, 248, 243);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+}
+.otsikko {
+    font-size: 32px;
+    color: whitesmoke;
+}
+  
+/* Navin fontti */
+.nav {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(22, 21, 21);
+    padding: 10px 0; /* Lisätty padding */
+    text-align: center;
+}
+
+/* Päävalikko */
+.nav a {
+    background: rgb(196, 174, 230);
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(17, 18, 17);
+    text-decoration: none;
+    padding: 10px;
+    display: inline-block;
+    border: 2px solid rgb(206, 12, 106);
+    font-size: 15px;
+    margin: 5px;
+}
+
+.nav a.active {
+    background-color: rgb(17, 16, 16);
+}
+
+.nav a:hover {
+    color: aquamarine;
+    background-color: rgb(42, 61, 165);
+}
+
+#valittu {
+    background-color: black;
+    color: white;
+}
+
+/* Etusivun otsikon tyyli */
+h1 {
+    color:whitesmoke;
+    font-size: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 0;
+}
+h2{
+    color: rgb(3, 30, 54);
+    font-size: 25px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 0;
+}
+
+/* Taustakuvan tyyli */
+.taustakuva {
+    position: relative;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.taustakuva img {
+    border-radius: 5px;
+}
+
+.taustakuva h1 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+}
+
+/* Sydänkuvakkeen tyyli */
+.heart {
+    color: red;
+}
+
+/* Tekstien keskittäminen */
+.container {
+   
+    justify-content: center;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.cta-button {  /* Ensimmäinen kehote-nappi index sivulla ja sen määritykset*/
+    display: inline-block;
+    width: auto;
+    padding: 10px 20px;
+    background-color: rgba(225, 68, 176, 0.8);
+    color: #fff;
+    text-decoration: none;
+    text-align: center;
+    border: 2px solid transparent;
+    border-radius: 5px;
+    transition: background-color 0.3s, color 0.3s, border-color 0.3s;
+    margin-bottom: 10px;
+}
+
+.cta-button:hover {
+    background-color: #0056b3; /* Tilanne, jossa käyttäjä vie hiiren kohdistimeen; sen väri */
+}
+
+.cta-button2 {   /* Toinen kehote-nappi index sivulla ja sen määritykset*/
+    display: inline-block;
+    width: auto;
+    padding: 10px 20px;
+    background-color: rgba(41, 200, 14, 0.8);
+    color: #fff;
+    text-decoration: none;
+    text-align: center;
+    border: 2px solid transparent;
+    border-radius: 5px;
+    transition: background-color 0.3s, color 0.3s, border-color 0.3s;
+    margin-bottom: 10px;
+}
+
+.cta-button2:hover {
+    background-color: #45a049;  /* Tilanne, jossa käyttäjä vie hiiren kohdistimeen; sen väri */
+}
+
+.cta-button2:active {
+    background-color: #9b4caf;  /* Silloin kun kohdistin on päällä*/
+    transform: translateY(2px);
+}
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px; /* Säädä korkeus tarpeen mukaan */
+}
+.footer-div {
+    display: flex;
+    align-items: center;
+}
+.footer-div p {
+    margin-left: 20px; /* Lisää väliä tekstin ja kuvien välille */
+}
+/* Keskitys */
+.contact, .contact-info, .opening-hours, .map {
+    max-width: 600px; /* Maksimileveys */
+    margin: 0 auto; /* Keskitä sivun leveydelle */
+    text-align: center; /* Keskitä tekstit */
+}
+.contact {
+    color: black;
+}
+/* Kuvien asettelu työpöytätasolla */
+.contact-info img, .opening-hours img, .map img {
+    max-width: 50%; /* Puolet leveydestä */
+    float: left; /* Aseta kuvat vierekkäin */
+    margin-right: 10px; /* Lisää hieman väliä kuvien välille */
+}
+
+/* Kuvien asettelu mobiililaitteilla */
+@media (max-width: 600px) {
+    .contact-info img, .opening-hours img, .map img {
+        max-width: 100%; /* Täysi leveys */
+        float: none; /* Aseta kuvat allekkain */
+        margin-right: 0; /* Nollaa väli */
+        margin-bottom: 10px; /* Lisää väliä kuvien alle */
+      
+    }
+
+    /* Etusivun CSS-koodi */
+header {
+    text-align: center;
+    padding-top: 35px;
+    background-color: transparent; /* Poistetaan taustaväri headerista */
+    color: #fff;
+}
+
+body {
+    margin: 0;
+    padding: 20px;
+    background-color: rgb(74, 53, 107);
+    color: rgb(247, 248, 243);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+}
+.otsikko {
+    font-size: 16px;
+    color: whitesmoke;
+}
+/* Navin fontti */
+.nav {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(22, 21, 21);
+    padding: 10px 0; /* Lisätty padding */
+    text-align: center;
+}
+
+/* Päävalikko */
+.nav a {
+    background: rgb(196, 174, 230);
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(17, 18, 17);
+    text-decoration: none;
+    padding: 10px;
+    display: inline-block;
+    border: 2px solid rgb(206, 12, 106);
+    font-size: 15px;
+    margin: 5px;
+}
+
+.nav a.active {
+    background-color: rgb(17, 16, 16);
+}
+
+.nav a:hover {
+    color: aquamarine;
+    background-color: rgb(42, 61, 165);
+}
+
+#valittu {
+    background-color: black;
+    color: white;
+}
+
+/* Etusivun otsikon tyyli */
+h1 {
+    color: whitesmoke;
+    font-size: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 0;
+}
+
+/* Taustakuvan tyyli */
+.taustakuva {
+    position: relative;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.taustakuva img {
+    border-radius: 5px;
+}
+
+.taustakuva h1 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+}
+
+/* Sydänkuvakkeen tyyli */
+.heart {
+    color: red;
+}
+/* Painikkeiden ja konttien tyyli */
+.container {
+    text-align: center;
+    margin-top: 20px;
+}
+.button.container {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px; /* Voit säätää tarvittaessa */
+}
+
+.button.container .cta-button,
+.button.container .cta-button2,
+.button.container .cta-button3 {
+    width: auto; /* Voit säätää napin leveyttä tarvittaessa */
+    padding: 10px 20px; /* Voit säätää napin sisäisiä marginaaleja */
+    margin: 0 10px; /* Lisätään väliä napin ja muiden elementtien välille */
+}
+.cta-button {  /* Ensimmäinen kehote-nappi index sivulla ja sen määritykset*/
+    display: inline-block;
+    width: auto;
+    padding: 12px 25px;
+    background-color: rgba(225, 68, 176, 0.8);
+    color: #fff;
+    text-decoration: none;
+    text-align: center;
+    border: 2px solid transparent;
+    border-radius: 5px;
+    transition: background-color 0.3s, color 0.3s, border-color 0.3s;
+    margin-bottom: 10px;
+    cursor: pointer;
+    margin: 4px;
+}
+
+.cta-button:hover {
+    background-color: #0056b3; /* Tilanne, jossa käyttäjä vie hiiren kohdistimeen; sen väri */
+}
+
+.cta-button2 {   /* Toinen kehote-nappi index sivulla ja sen määritykset*/
+    display: inline-block;
+    width: auto;
+    padding: 10px 20px;
+    background-color: rgba(41, 200, 14, 0.8);
+    color: #fff;
+    text-decoration: none;
+    text-align: center;
+    border: 2px solid transparent;
+    border-radius: 5px;
+    transition: background-color 0.3s, color 0.3s, border-color 0.3s;
+    margin-bottom: 10px;
+}
+
+.cta-button2:hover {
+    background-color: #45a049;  /* Tilanne, jossa käyttäjä vie hiiren kohdistimeen; sen väri */
+}
+
+.cta-button2:active {
+    background-color: #9b4caf;  /* Silloin kun kohdistin on päällä*/
+    transform: translateY(2px);
+}
+.cta-button3 {
+    display: inline-block;
+    width: auto;
+    padding: 10px 20px;
+    background-color: rgba(247, 167, 219, 0.8);
+    color: #fff;
+    text-decoration: none;
+    border: 2px solid transparent;
+    border-radius: 5px;
+    transition: background-color 0.3s, color 0.3s, border-color 0.3s;
+    margin-bottom: 10px;
+}
+.cta-button3:hover {
+    background-color: #736a84;
+}
+
+.cta-button3:active {
+    background-color: #9b4caf;
+    transform: translateY(2px);
+}
+/* Alatunniste*/
+footer {
+    font-family: Arial, Helvetica, sans-serif;
+
+    display: flex;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    color: whitesmoke;
+    text-align: center;
+    padding: 20px;
+    justify-content: center;
+    align-items: center;
+}
+.footer-div {
+    display: flex;
+    align-items: center;
+}
+.footer-div p {
+    margin-left: 20px; /* Lisää väliä tekstin ja kuvien välille */
+}
+
+/* Keskitys */
+.contact, .contact-info, .opening-hours, .map {
+    max-width: 600px; /* Maksimileveys */
+    margin: 0 auto; /* Keskitä sivun leveydelle */
+    text-align: center; /* Keskitä tekstit */
+}
+
+/* Kuvien asettelu työpöytätasolla */
+.contact-info img, .opening-hours img, .map img {
+    max-width: 50%; /* Puolet leveydestä */
+    float: left; /* Aseta kuvat vierekkäin */
+    margin-right: 10px; /* Lisää hieman väliä kuvien välille */
+}
+    .box-image {
+        width: 80%;
+        height: auto;
+    }
+    .container {
+        width: 90%;
+        height: auto;
+
+    }
+    .footer_kuva{
+        width: 30px;
+        height: 30px;
+
+    }
+}
+
+/*tablettikoko*/
+@media screen and (min-width: 600px) {
+contact-info img, .opening-hours img, .map img {
+    max-width: 100%; /* Täysi leveys */
+    float: none; /* Aseta kuvat allekkain */
+    margin-right: 0; /* Nollaa väli */
+    margin-bottom: 10px; /* Lisää väliä kuvien alle */
+}  
+}
+.box-image {
+    width: 80%;
+    height: auto;
+}
+.container {
+    width: 90%;
+    height: auto;
+
+}
+.footer_kuva{
+    width: 15px;
+    height: 15px;
+}
+
+/* Ota yhteyttä.html:n CSS-koodi */
+.contact {
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 5px;
+    text-align: center; /* Keskitetään yhteystiedot */
+    color: #333; /* Musta fonttiväri */
+}
+
+.contact h1 {
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.contact p {
+    margin-bottom: 10px;
+}
+
+.contact a {
+    color: #007bff;
+}
+
+.contact a:hover {
+    text-decoration: underline;
+}
+
+.contact span {
+    font-weight: bold;
+}
+
+/* Kartta */
+.kartta {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.kartta iframe {
+    width: 80%;
+    height: 300px; /* Muuta korkeus tarpeen mukaan */
+    border: 0;
+    border-radius: 5px;
+}
+
+/* Asetetaan elementit allekkain mobiilinäkymässä */
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.container1 .tuote {
+    width: 30%; /* Leveys, jotta ne mahtuvat kolme rinnakkain */
+    margin-bottom: 20px; /* Lisää marginaalia alapuolelle paremman ulkonäön saavuttamiseksi */
+}
+
+.tuote {
+    flex: 0 0 100%; /* Yksi tuote per rivi mobiililaitteilla */
+    max-width: 300px; /* Rajoitetaan tuotteiden leveys */
+    margin: 10px;
+    text-align: center;
+}
+
+/* Kuvan koko */
+.tuote img {
+    width: 50%;
+    height: auto;
+    border-radius: 5px;
+}
+
+/* Hinta- ja nappielementtien tyyli */
+.tuote p, .tuote button {
+    margin-top: 5px;
+}
+
+.tuote button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.tuote button:hover {
+    background-color: #0056b3;
+}
+ChatGPT
+Sinun tarvitsee vain lisätä .contact-luokan alle CSS-sääntö, joka määrittää kaikkien tekstinvärien smokevalkoisiksi (whitesmoke), paitsi "Ota yhteyttä" -otsikon, jonka haluat olevan musta. Tässä on korjattu CSS-koodi:
+
+css
+Copy code
+/* Ota yhteyttä.html:n CSS-koodi */
+.contact {
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 5px;
+    text-align: center; /* Keskitetään yhteystiedot */
+    color: whitesmoke; /* Kaikki tekstit smokevalkoisia */
+}
+
+.contact h1 {
+    color: black; /* "Ota yhteyttä" -otsikko musta */
+    margin-bottom: 10px;
+}
+
+.contact p {
+    margin-bottom: 10px;
+}
+
+.contact a {
+    color: #007bff;
+}
+
+.contact a:hover {
+    text-decoration: underline;
+}
+
+.contact span {
+    font-weight: bold;
+}
+
 /*tablettikoko*/
 @media screen and (min-width: 600px) {
 contact-info img, .opening-hours img, .map img {

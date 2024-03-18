@@ -161,7 +161,9 @@ footer {
     margin: 0 auto; /* Keskitä sivun leveydelle */
     text-align: center; /* Keskitä tekstit */
 }
-
+.contact {
+    color: black;
+}
 /* Kuvien asettelu työpöytätasolla */
 .contact-info img, .opening-hours img, .map img {
     max-width: 50%; /* Puolet leveydestä */

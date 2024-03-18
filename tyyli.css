@@ -161,8 +161,10 @@ footer {
     margin: 0 auto; /* Keskitä sivun leveydelle */
     text-align: center; /* Keskitä tekstit */
 }
-.contact {
-    color: black;
+/* Väriasetukset */
+.contact-info h2,
+.contact-info p {
+    color: white; /* Aseta h2 ja p valkoisiksi */
 }
 /* Kuvien asettelu työpöytätasolla */
 .contact-info img, .opening-hours img, .map img {

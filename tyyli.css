@@ -320,11 +320,6 @@ footer {
 }
 .footer-div p {
     margin-left: 10px; /* Lisää väliä tekstin ja kuvien välille */
-}footer {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100px; /* Säädä korkeus tarpeen mukaan */
 }
 .footer-div {
     display: flex;
@@ -358,8 +353,8 @@ footer {
 
     }
     .footer_kuva{
-        width: 15px;
-        height: 15px;
+        width: 30px;
+        height: 30px;
 
     }
 }
